@@ -1,7 +1,7 @@
 //Populate heavy items after DOM loaded
 $(window).on("load", function() {
   $('#album1').attr('src', 'img/album/theo_fleck.jpg');
-  $('#album2').attr('src', 'img/album/theo_fleck.jpg');
+  $('#album2').attr('src', 'img/album/Charles_Cotton.jpg');
   $('#album3').attr('src', 'img/album/theo_fleck.jpg');
   $('#album4').attr('src', 'img/album/theo_fleck.jpg');
 });
