@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Project CLUSTER - Multi-Purpose HPC Computing for the ECE Department">
+    <meta name="author" content="Project CLUSTER">
+    <title>Project CLUSTER</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- CSS/JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1/dist/jquery.min.js,npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body class="bg-dark" data-spy="scroll" data-target=".navbar" data-offset="75">
+    <header>
+      <nav class="navbar fixed-top nav-pills navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#head"><i class="fa fa-server"></i> Project CLUSTER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#team">Team</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+      <section class="jumbotron text-center" id="top">
+        <div class="container-fluid">
+          <h1 class="jumbotron-heading">Project CLUSTER</h1>
+          <hr />
+          <p>
+            Multi-Purpose HPC Computing for the ECE Department
+          </p>
+          <img class="img-responsive" src="img/server-cluster.png" alt="">
+        </div>
+      </section>
+      <section class="jumbotron text-center" id="about">
+        <div class="container-fluid justify-content-center">
+          <h1 class="jumbotron-heading">About</h1>
+          <hr />
+          <p>Our goal for this project is to design and build a cloud computing asset for UD's ECE Department</p>
+          <p>One part is a Kubernetes cluster to host automatically deployed web apps for classes and research</p>
+          <p>We will use Rancher to manage this cluster, and host a website where students can deploy these apps</p>
+          <p>Another part is a small scale version of UD's research supercomputers to learn and test new ideas</p>
+          <p>This will use the same software stack as the full scale to lower the barrier to entry for supercomputing</p>
+        </div>
+      </section>
+      <section id="team">
+        <div class="album py-5">
+          <div class="container">
+            <h1 class="jumbotron-heading text-center">Team</h1>
+            <hr />
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="" alt="Card image cap" id="album1">
+                  <div class="card-body">
+                    <h5 class="card-title">Theo Fleck</h5>
+                    <p class="card-text">blah blah blah here</p>
+                    <a href="/blog-theo.html" class="btn btn-success">Theo's Blog</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="" alt="Card image cap" id="album2">
+                  <div class="card-body">
+                    <h5 class="card-title">Adam Dadey</h5>
+                    <p class="card-text">blah blah blah here</p>
+                    <a href="/blog-adam.html" class="btn btn-success">Adam's Blog</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="" alt="Card image cap" id="album3">
+                  <div class="card-body">
+                    <h5 class="card-title">Daniel May</h5>
+                    <p class="card-text">blah blah here</p>
+                    <a href="/blog-dan.html" class="btn btn-success">Dan's Blog</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="" alt="Card image cap" id="album4">
+                  <div class="card-body">
+                    <h5 class="card-title">Samuel Matylewicz</h5>
+                    <p class="card-text">blah blah here</p>
+                    <a href="/blog-sam.html" class="btn btn-success">Sam's Blog</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="jumbotron text-center" id="contact">
+        <div class="container-fluid">
+          <h1 class="jumbotron-heading">Contact Us</h1>
+          <hr />
+          <div class="row justify-content-center">
+            <div class="col-lg-6" id="btns">
+              <a href="mailto:tfleck@udel.edu" target="_blank" class="btn btn-outline btn-circle" title="Email"><i class="fa fa-fw fa-envelope-o"></i></a>
+              <a href="https://github.com/cpeg498-cluster" target="_blank" class="btn btn-outline btn-circle" title="Github"><i class="fa fa-fw fa-github"></i></a>
+            </div>
+          </div>
+          <br />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="text-center">
+        Copyright &copy;
+        <script type="text/JavaScript">document.write(new Date().getFullYear());</script>
+        Project CLUSTER, All Rights Reserved
+      </p>
+    </footer>
+    <!-- CSS/JS -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"></noscript>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
