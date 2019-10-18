@@ -15,11 +15,8 @@ $(window).scroll(function() {
 });
 // Add smooth scrolling on all links inside the navbar
 $("nav a").on('click', function(event) {
-  if (this.hash !== "") {
-    event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top - 65
-    }, 900);
-  }
+  let sectionTo = $(this).attr('href');
+  $('html, body').animate({
+    scrollTop: $(sectionTo).offset().top - 65
+  }, 900);
 });
