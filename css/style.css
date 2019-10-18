@@ -183,10 +183,10 @@ footer p{
     background-color: #ccebff;
 }
 
+/* Resize navabr on smaller devices */
 @media screen and (max-width: 430px) {
   .navbar-toggler {
-    #padding: 0.1rem;
-    #font-size: 1rem;
+    padding: 0.25rem 0.3rem;
   }
   .navbar-brand {
     font-size: 1.75rem;
