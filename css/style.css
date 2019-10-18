@@ -146,7 +146,7 @@ footer p{
 }
 @media screen and (max-width: 992px) {
     body{font-size: 14px;}
-    #aboutme p{margin-bottom: 12px;}
+    #about p{margin-bottom: 12px;}
 }
 
 /*
