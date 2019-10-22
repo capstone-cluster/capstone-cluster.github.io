@@ -2,8 +2,8 @@
 $(window).on("load", function() {
   $('#album1').attr('src', 'img/theo_fleck.jpg');
   $('#album2').attr('src', 'img/adam_dadey.jpg');
-  $('#album3').attr('src', 'img/theo_fleck.jpg');
-  $('#album4').attr('src', 'img/theo_fleck.jpg');
+  $('#album3').attr('src', 'img/daniel_may.jpg');
+  $('#album4').attr('src', 'img/sam_matylewicz.jpg');
 });
 //Shrink navbar on scroll
 $(window).scroll(function() {
