@@ -49,12 +49,12 @@
               <div class="blog-post">
                 <h2 class="blog-post-title">Week of October 27th</h2>
                 <p class="blog-post-meta">October 31, 2019 by Theo Fleck</p>
-                <p>This week, I figured out how to get distributed persistent storage to
-                  work across the cluster. We are going to use a system made by the
-                  developers of Rancher called Longhorn. I decided to just provision
-                  the nodes with a large disk size rather than adding additional disks
-                  to a smaller node. This was much simpler to implement, and worked
-                  after a little tinkering with a driver for open-iscsi.
+                <p>This week, I solved some of our automation problems, I 
+                  created some templates for our nodes to be configured automatically.
+                  I made the YAML configuration linked through our GitHub so 
+                  that way updates to certain attributes can be updated 
+                  via git. The storage drivers needed for Longhorn are now 
+                  taken care of automatically.
                 </p>
               </div>
             </div>
