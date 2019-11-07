@@ -55,7 +55,12 @@
                   inconsistency across reboots despite a lot of tweaking. The solution
                   is to grab the MAC address from ESXi right when the VM is created
                   and enter it into pfSense before Rancher takes over and installs the OS and begins configuring. It takes a minute before Rancher takes over, so you don't have to be crazy fast.<br>
-                  I also got a deployment of 
+                  I also got a deployment of vscode to work using the 
+                  linuxserver/code-server docker image. It can be deployed
+                  with any user password and sudo password. It automatically creates
+                  a redundant Longhorn volume based on the size you specify.
+                  Next, we have to figure out how to make a template version of this
+                  deploy automatically using the Rancher API.
                 </p>
                 <a href="/img/blog-theo/11-3-vscode.PNG" data-lightbox="image">
                   <div class="d-flex justify-content-center">
