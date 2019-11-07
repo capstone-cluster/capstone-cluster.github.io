@@ -47,6 +47,29 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
+                <h2 class="blog-post-title">Week of November 3rd</h2>
+                <p class="blog-post-meta">November 7, 2019 by Theo Fleck</p>
+                <p>This week, I figured out a way to fix our networking issues.
+                  Because of the dynamic, templated system for deploying the cluster
+                  nodes, we were using DHCP to allocate IP addresses, but this created
+                  inconsistency across reboots despite a lot of tweaking. The solution
+                  is to grab the MAC address from ESXi right when the VM is created
+                  and enter it into pfSense before Rancher takes over and installs the OS and begins configuring. It takes a minute before Rancher takes over, so you don't have to be crazy fast.<br>
+                  I also got a deployment of 
+                </p>
+                <a href="/img/blog-theo/11-3-vscode.PNG" data-lightbox="image">
+                  <div class="d-flex justify-content-center">
+                    <img class="img-fluid" src="/img/blog-theo/11-3-vscode.PNG">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
                 <h2 class="blog-post-title">Week of October 27th</h2>
                 <p class="blog-post-meta">October 31, 2019 by Theo Fleck</p>
                 <p>This week, I solved some of our automation problems, I 
@@ -56,6 +79,11 @@
                   via git. The storage drivers needed for Longhorn are now 
                   taken care of automatically.
                 </p>
+                <a href="/img/blog-theo/10-27-config.PNG" data-lightbox="image">
+                  <div class="d-flex justify-content-center">
+                    <img class="img-fluid" src="/img/blog-theo/10-27-config.PNG">
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -64,7 +92,7 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
-                <h2 class="blog-post-title">Week of October 21st</h2>
+                <h2 class="blog-post-title">Week of October 20th</h2>
                 <p class="blog-post-meta">October 24, 2019 by Theo Fleck</p>
                 <p>This week, I figured out how to get distributed persistent storage to
                   work across the cluster. We are going to use a system made by the
@@ -73,6 +101,11 @@
                   to a smaller node. This was much simpler to implement, and worked
                   after a little tinkering with a driver for open-iscsi.
                 </p>
+                <a href="/img/blog-theo/10-21-longhorn.PNG" data-lightbox="image">
+                  <div class="d-flex justify-content-center">
+                    <img class="img-fluid" src="/img/blog-theo/10-21-longhorn.PNG">
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -81,9 +114,9 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
-                <h2 class="blog-post-title">Week of October 14th</h2>
+                <h2 class="blog-post-title">Week of October 13th</h2>
                 <p class="blog-post-meta">October 18, 2019 by Theo Fleck</p>
-                <p>This week, I set up PfSense on ESXi to control the local
+                <p>This week, I set up pfSense on ESXi to control the local
                   internal network. I also set up a RancherOS master node VM, and
                   installed Rancher on it. Once we decide on the OS for the workers,
                   we can bring up the full cluster and start testing applications.</p>
