@@ -1,112 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head id="head">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Project CLUSTER - Multi-Purpose HPC Computing for the ECE Department">
-    <meta name="author" content="Project CLUSTER">
-    <title>Project CLUSTER</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <!-- CSS/JS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1/dist/jquery.min.js,npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-  </head>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head id="head">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Project CLUSTER - Multi-Purpose HPC Computing for the ECE Department">
+        <meta name="author" content="Project CLUSTER">
+        <title>Project CLUSTER</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <!-- CSS/JS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1/dist/jquery.min.js,npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+      </head>
 
-  <body class="bg-dark" data-spy="scroll" data-target=".navbar" data-offset="75">
-    <header>
-      <nav class="navbar fixed-top nav-pills navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/index.html#head"><i class="fa fa-server"></i> Project CLUSTER</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="/index.html#about">About</a>
-            <a class="nav-item nav-link" href="/index.html#team">Team</a>
-            <a class="nav-item nav-link" href="/index.html#contact">Contact</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main role="main">
-      <section class="jumbotron text-center" id="blog-top">
-        <div class="container-fluid">
-          <h1 class="jumbotron-heading">Dan's Blog</h1>
-          <hr />
-          <p>
-            A journal of everything I've done for Project CLUSTER
+      <body class="bg-dark" data-spy="scroll" data-target=".navbar" data-offset="75">
+        <header>
+          <nav class="navbar fixed-top nav-pills navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/index.html#head"><i class="fa fa-server"></i> Project CLUSTER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="/index.html#about">About</a>
+                <a class="nav-item nav-link" href="/index.html#team">Team</a>
+                <a class="nav-item nav-link" href="/index.html#contact">Contact</a>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main role="main">
+          <section class="jumbotron text-center" id="blog-top">
+            <div class="container-fluid">
+              <h1 class="jumbotron-heading">Dan's Blog</h1>
+              <hr />
+              <p>
+                A journal of everything I've done for Project CLUSTER
+              </p>
+            </div>
+          </section>
+          <section id="blog-section">
+            <br><br>
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8">
+                  <div class="blog-post">
+                    <h2 class="blog-post-title">Looking into Proxmox</h2>
+                    <p class="blog-post-meta">November 14, 2019 by Daniel May</p>
+                      Investgating using Proxmox instead of ESXI since it is open-source and the api seems easier to use.
+                      <a href="/img/blog-daniel/proxmox.JPG" data-lightbox="image">
+                      <div class="justify-content-center d-flex">
+                        <img class="img-fluid" src="/img/blog-daniel/proxmox.JPG" style="max-width: 60%; align-self: center; border: 2px solid #000;">
+                      </div>
+                      </a>
+                      </div>
+                      Screen shot of Proxmox UI running in a VM.
+                      <a href="/img/blog-daniel/proxmoxUI.JPG" data-lightbox="image">
+                      <div class="justify-content-center d-flex">
+                        <img class="img-fluid" src="/img/blog-daniel/proxmoxUI.JPG" style="max-width: 60%; align-self: center; border: 2px solid #000;">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8">
+                  <div class="blog-post">
+                    <h2 class="blog-post-title">Week of October 25th, 2019</h2>
+                    <p class="blog-post-meta">October 25, 2019 by Daniel May</p>
+                    <p>Helpful links.</p>
+                    <p><a href="https://pubs.vmware.com/vi3/sdk/ReferenceGuide/vim.ServiceInstance.html">https://pubs.vmware.com/vi3/sdk/ReferenceGuide/vim.ServiceInstance.html</a></p>
+                    <p><a href="https://github.com/vmware/pyvmomi">https://github.com/vmware/pyvmomi</a></p>
+                    <p><a href="http://vmware.github.io/pyvmomi-community-samples/">http://vmware.github.io/pyvmomi-community-samples/</a></p>
+                    <a href="/img/blog-daniel/vSphereSDK_github.JPG" data-lightbox="image">
+                      <div class="justify-content-center d-flex">
+                        <img class="img-fluid" src="/img/blog-daniel/vSphereSDK_github.JPG" style="max-width: 60%; align-self: center; border: 2px solid #000;">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-8">
+                  <div class="blog-post">
+                    <h2 class="blog-post-title">October 31st, 2019</h2>
+                    <p class="blog-post-meta">October 25, 2019 by Daniel May</p>
+                    <p>Got an example working for the pyvmomi api that lists all the VMs on the system.</p>
+                    <a href="/img/blog-daniel/pyvmomiSampleOutput.JPG" data-lightbox="image">
+                      <div class="justify-content-center d-flex">
+                        <img class="img-fluid" src="/img/blog-daniel/pyvmomiSampleOutput.JPG" style="max-width: 60%; align-self: center; border: 2px solid #000;">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <p class="text-center">
+            Copyright &copy;
+            <script type="text/JavaScript">document.write(new Date().getFullYear());</script>
+            Project CLUSTER, All Rights Reserved
           </p>
-        </div>
-      </section>
-      <section id="blog-section">
-        <br><br>
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-10 col-md-8">
-              <div class="blog-post">
-                <h2 class="blog-post-title">Looking into Proxmox</h2>
-                <p class="blog-post-meta">November 14, 2019 by Daniel May</p>
-                  Investgating using Proxmox instead of ESXI since it is open-source and the api seems easier to use.
-                  <a href="/img/blog-daniel/proxmox.JPG" data-lightbox="image">
-                  <div class="justify-content-center d-flex">
-                    <img class="img-fluid" src="/img/blog-daniel/proxmox.JPG" style="max-width: 60%; align-self: center; border: 2px solid #000;">
-                  </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-10 col-md-8">
-              <div class="blog-post">
-                <h2 class="blog-post-title">Week of October 25th, 2019</h2>
-                <p class="blog-post-meta">October 25, 2019 by Daniel May</p>
-                <p>Helpful links.</p>
-                <p><a href="https://pubs.vmware.com/vi3/sdk/ReferenceGuide/vim.ServiceInstance.html">https://pubs.vmware.com/vi3/sdk/ReferenceGuide/vim.ServiceInstance.html</a></p>
-                <p><a href="https://github.com/vmware/pyvmomi">https://github.com/vmware/pyvmomi</a></p>
-                <p><a href="http://vmware.github.io/pyvmomi-community-samples/">http://vmware.github.io/pyvmomi-community-samples/</a></p>
-                <a href="/img/blog-daniel/vSphereSDK_github.JPG" data-lightbox="image">
-                  <div class="justify-content-center d-flex">
-                    <img class="img-fluid" src="/img/blog-daniel/vSphereSDK_github.JPG" style="max-width: 60%; align-self: center; border: 2px solid #000;">
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-10 col-md-8">
-              <div class="blog-post">
-                <h2 class="blog-post-title">October 31st, 2019</h2>
-                <p class="blog-post-meta">October 25, 2019 by Daniel May</p>
-                <p>Got an example working for the pyvmomi api that lists all the VMs on the system.</p>
-                <a href="/img/blog-daniel/pyvmomiSampleOutput.JPG" data-lightbox="image">
-                  <div class="justify-content-center d-flex">
-                    <img class="img-fluid" src="/img/blog-daniel/pyvmomiSampleOutput.JPG" style="max-width: 60%; align-self: center; border: 2px solid #000;">
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p class="text-center">
-        Copyright &copy;
-        <script type="text/JavaScript">document.write(new Date().getFullYear());</script>
-        Project CLUSTER, All Rights Reserved
-      </p>
-    </footer>
-    <!-- CSS/JS -->
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"></noscript>
-    <script src="js/main.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.1/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.1/dist/js/lightbox.min.js"></script>
-  </body>
+        </footer>
+        <!-- CSS/JS -->
+        <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"></noscript>
+        <script src="js/main.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.1/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.1/dist/js/lightbox.min.js"></script>
+      </body>
 
-</html>
+    </html>
