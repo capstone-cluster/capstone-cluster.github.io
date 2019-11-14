@@ -45,6 +45,30 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
+                <h2 class="blog-post-title">Week of November 11th</h2>
+                <p class="blog-post-meta">November 14, 2019 by Adam Dadey</p>
+                <p>
+                  This week I was able to create a head node and worker node and get them to
+                  communicated with eachother.  Unfortunately, while trying to install slurm
+                  I encountered an error during the source build because it could not find python.
+                  In CentOS 8, the version I was using, there is no default python environment, which
+                  the builder relies on.  To fix this problem I moved to CentOS 7 and was successfully
+                  able to build and install slurm on both the head node and worker node.  Below is an
+                  image of the 'scontrol show nodes' command which properly shows the worker node.
+                </p>
+                <a href="/img/blog-adam/slurm-master-found-node.png" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-adam/slurm-master-found-node.png" style="max-width: 65%; align-self: center; border: 2px solid #000;">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
                 <h2 class="blog-post-title">Week of November 4th</h2>
                 <p class="blog-post-meta">November 7, 2019 by Adam Dadey</p>
                 <p>
