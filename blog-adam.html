@@ -45,6 +45,34 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
+                <h2 class="blog-post-title">Week of February 10th</h2>
+                <p class="blog-post-meta">February 13, 2020 by Adam Dadey</p>
+                <p>
+                  This week was the first week of Spring Semester. I installed Open MPI,
+                  which allows for parallel processing in the cluster. Additionally,
+                  I adjusted the slurm.conf file so that system memory is an allocatable
+                  resource. I researched OpenHPC, a set of tools for creating a cluster. One
+                  of the guides describes using CentOS 7 as the base os, Warewulf to install
+                  and manage the cluster, and slurm as the job scheduler for the cluster. This
+                  configuration is very similar to what I currently have implemented on VMs.
+                  I could potentially use the OpenHPC resources for implementing the cluster
+                  on the C7000 blades. Finally, I've been reading up on slrum documentation
+                  to get a better grasp of its functionality. Below is a image of a submit
+                  script that demonstrates memory allocation and running an MPI program.
+                </p>
+                <a href="/img/blog-adam/slurm-master-job-log.png" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-adam/slurm_sbatch_script_mpi.png" style="max-width: 65%; align-self: center; border: 2px solid #000;">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
                 <h2 class="blog-post-title">Week of November 25th (Thanksgiving Break)</h2>
                 <p class="blog-post-meta">November 30, 2019 by Adam Dadey</p>
                 <p>
@@ -199,7 +227,7 @@
                   This week I setup the DRAC5 on the Dell R805 server.  I found that Internet Explorer
                   is required to use the server console view and insert virtual media.  Although,
                   browsers like Firefox or Chrome can be used to view the web based splash screen for
-                  the server. Below is an image of the DRAC5 splash screen.
+                  the server. Below is an image of the DRAC5 main screen.
                 </p>
                 <a href="/img/blog-adam/DRAC_splash_screen.PNG" data-lightbox="image">
                   <div class="justify-content-center d-flex">
