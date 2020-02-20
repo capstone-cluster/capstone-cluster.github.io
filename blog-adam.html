@@ -45,6 +45,32 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
+                <h2 class="blog-post-title">Week of February 17th</h2>
+                <p class="blog-post-meta">February 20, 2020 by Adam Dadey</p>
+                <p>
+                  This week I got the sbcast command to work with slurm.  The sbcast
+                  command is supposed to be used to disperse a file to all the nodes
+                  allocated to a specific job.  Unfortunately, the command was throwing
+                  an error saying it could not find the given file.  The problem was that
+                  the sbcast command was being run on the first node allocated to the job.
+                  I initialized the job on the master, so the sbcast command was being run
+                  on the first worker.  The file I was trying to disperse was not on the
+                  worker node so it was throwing an error.  The solution is to run jobs from
+                  the worker.  With this change the command worked!
+                </p>
+                <a href="/img/blog-adam/slurm-sbcast-script.png" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-adam/slurm-sbcast-script.png" style="max-width: 65%; align-self: center; border: 2px solid #000;">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
                 <h2 class="blog-post-title">Week of February 10th</h2>
                 <p class="blog-post-meta">February 13, 2020 by Adam Dadey</p>
                 <p>
@@ -56,13 +82,13 @@
                   and manage the cluster, and slurm as the job scheduler for the cluster. This
                   configuration is very similar to what I currently have implemented on VMs.
                   I could potentially use the OpenHPC resources for implementing the cluster
-                  on the C7000 blades. Finally, I've been reading up on slrum documentation
+                  on the C7000 blades. Finally, I've been reading up on slurm documentation
                   to get a better grasp of its functionality. Below is a image of a submit
                   script that demonstrates memory allocation and running an MPI program.
                 </p>
-                <a href="/img/blog-adam/slurm_sbatch_script_mpi.png" data-lightbox="image">
+                <a href="/img/blog-adam/slurm-sbatch-script-mpi.png" data-lightbox="image">
                   <div class="justify-content-center d-flex">
-                    <img class="img-fluid" src="/img/blog-adam/slurm_sbatch_script_mpi.png" style="max-width: 65%; align-self: center; border: 2px solid #000;">
+                    <img class="img-fluid" src="/img/blog-adam/slurm-sbatch-script-mpi.png" style="max-width: 65%; align-self: center; border: 2px solid #000;">
                   </div>
                 </a>
               </div>
