@@ -45,6 +45,40 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
+                <h2 class="blog-post-title">Week of April 6th</h2>
+                <p class="blog-post-meta">April 9, 2020 by Adam Dadey</p>
+                <p>
+                  Due to COVID-19, Spring Break was moved up to the week of March 16th
+                  and extended through the week of March 23rd.  Not much progress was
+                  made during the week of March 30th.  We mainly had meetings discussing
+                  how the project would continue.  This week I made two "installers", one
+                  for configuring a master node and the other for configuring a worker node.
+                  Now, all one has to do to configure a node is copy over the respective archive
+                  to a node with CentOS 7 installed and run the configure script. These
+                  scripts are ready to go when we get the C7000.  Cotton is close to having
+                  them ready.  Hopefully I can start implementing slurm on a C7000
+                  next week! Fingers crossed...
+                </p>
+                <p>
+                  For fun, I used the configure script to create a fourth worker node. After
+                  running the configure script the node was ready to go and automatically
+                  became allocatable on the slurm cluster!  I ran the prime.mpi script
+                  including the new node and was able to finish the calculation is a quarter
+                  of the time compared to three nodes!  Below is an image of the results.
+                </p>
+                <a href="/img/blog-adam/slurm-prime-mpi-4-node-results.png" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-adam/slurm-prime-mpi-4-node-results.png" style="max-width: 45%; align-self: center; border: 2px solid #000;">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
                 <h2 class="blog-post-title">Week of March 9th</h2>
                 <p class="blog-post-meta">March 12, 2020 by Adam Dadey</p>
                 <p>
