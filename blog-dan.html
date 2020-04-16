@@ -43,6 +43,29 @@
             <br><br>
 
               
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-8">
+          <div class="blog-post">
+            <h2 class="blog-post-title">EC2 Project Update</h2>
+            <p class="blog-post-meta">4/16/20 by Daniel May</p>
+              <p>
+              I've been trying to configure the indevidual VM instances using the qemu guest agent but haven't had any luck getting this to work.
+              As such I have decided to configure the VMs using ssh. Since all of the templates will start up with a standard password they will
+              only be connected to the internal network (Network 2 in the diagram) until the configuration is complete. So far I have set up this
+              network and have configured the master VM to provided DHCP service to the VMs on Network 2.
+              </p>
+              <a href="/img/blog-daniel/senior_design_proxmox_network_diagram.jpg" data-lightbox="image">
+              <div class="justify-content-center d-flex">
+                <img class="img-fluid" src="/img/blog-daniel/senior_design_proxmox_network_diagram.jpg" style="max-width: 60%; align-self: center; border: 2px solid #000;">
+              </div>
+              </a>
+              </div>
+          </div>
+        </div>
+      </div>
+              
+              
       <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
