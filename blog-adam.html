@@ -48,18 +48,33 @@
                 <h2 class="blog-post-title">Week of April 20th</h2>
                 <p class="blog-post-meta">April 23, 2020 by Adam Dadey</p>
                 <p>
+                  Dr. Cotton also got the C7000 up and running and we now access. There is
+                  still one change that needs to be made, namely, one of the physical switches
+                  of the C7000 needs to be taken off the interent so it can be used as a pfSense
+                  LAN.  Once that is complete I can start implementing slurm on the C7000!
+                </p>
+                <p>
                   This week I created a pfSense VM and configured it as I would
                   on the C7000.  All of the nodes of the slurm cluster were successfully
                   moved under pfSense and cluster is still functioning.  Also, I found
                   that in the pfSense console you can temporarily disable packet filtering
                   to gain access to the webGUI through the WAN interface of pfSense. This
                   means there is no need to a VPN into the LAN side of pfSense in order to
-                  adjust the configuration.
-                <p>
-                  Dr. Cotton also got the C7000 up and running and we now access.  There are
-                  a few configuration changes that need to be made, but the C7000 is just about
-                  ready for implementation of slurm.
+                  adjust the configuration.  Additonally, a firewall rule can be created to
+                  enable webGUI access of the WAN.  Below are two pictures that show how to
+                  gain access of the webGUI over the WAN.
                 </p>
+                <a href="/img/blog-adam/pfSense-disable-packetfilter.png" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-adam/pfSense-disable-packetfilter.png" style="max-width: 70%; align-self: center; border: 2px solid #000;">
+                  </div>
+                </a>
+                <p></p>
+                <a href="/img/blog-adam/pfSense_webgui_over_WAN.PNG" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-adam/pfSense_webgui_over_WAN.PNG" style="max-width: 70%; align-self: center; border: 2px solid #000;">
+                  </div>
+                </a>
               </div>
             </div>
           </div>
