@@ -43,6 +43,127 @@
       </section>
       <section id="blog-section">
         <br><br>
+        <!--
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">RCE Update</h2>
+                <p class="blog-post-meta">May 1, 2020 by Theo Fleck</p>
+                <p>This week I built the web app that will be used to deploy workloads.
+                  I had to scrape the API requests and JSON payloads from Rancher's WebUI
+                  because they don't have documentation on what to send to the available endpoints.
+                  I think I came up with a pretty good parameterized system to add more of these
+                  containers in the future, customized versions of the code-server container would
+                  be particularly easy.<br>
+                  Currently, the web app has no authentication measures, ideally this would sit
+                  behind UD's CAS system. I also want to modify the templates to support the creation
+                  of "secrets" to store the password and sudo password instead of environment
+                  variables. The server admin will still be able to read the passwords, but it adds
+                  a little bit of extra security to the setup.
+                </p>
+                <a href="/img/blog-theo/5-1-webapp.PNG" data-lightbox="image">
+                  <div class="d-flex justify-content-center">
+                    <img class="img-fluid" src="/img/blog-theo/5-1-webapp.PNG">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">RCE Update</h2>
+                <p class="blog-post-meta">April 24, 2020 by Theo Fleck</p>
+                <p>I learned how to use GitHub Actions CI/CD pipelines for the web app.
+                  The idea is to store the source code on GitHub, and then have commits
+                  trigger a script that builds the Docker container and pushes it to DockerHub.
+                  From there, the cluster can pull down and run the container and use it
+                  to deploy the configured container workloads. The purpose of this is so that
+                  people could theoretically submit pull requests to add workloads to the system
+                  without needing an admin to set them up manually.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">RCE Update</h2>
+                <p class="blog-post-meta">April 17, 2020 by Theo Fleck</p>
+                <p>After a little tweaking, we were able to get everything
+                  working on the R805, now at Dr. Cotton's house. The VPN
+                  we had setup prior worked after fixing a static IP issue.
+                  I was able to boot up the Rancher cluster, and everything 
+                  appears to be working.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">RCE Update</h2>
+                <p class="blog-post-meta">April 10, 2020 by Theo Fleck</p>
+                <p>Now, the RCE will be running off of the R805 instead to demonstrate a
+                  virtual "cluster". I am trying to figure out what modifications need to be
+                  made to the networking setup to be able to connect to pfSense and Rancher from
+                  outside the UD network. If we can get pfSense connected directly to the internet,
+                  we should be good.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">RCE Update</h2>
+                <p class="blog-post-meta">March 13, 2020 by Theo Fleck</p>
+                <p>The next two weeks are now spring break due to the virus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">RCE Update</h2>
+                <p class="blog-post-meta">March 6, 2020 by Theo Fleck</p>
+                <p>I have been working on the design of the web app while waiting on the C7000 or the R805.
+                  I'm going to use Node.JS, Express, and Docker to build it. I can use Rancher's API & keys
+                  to interface with the system and deploy resources. Node.JS can expose a simplified API to the
+                  frontend, and then make more complicated calls to Rancher. This also separates authentication measures.
+                  We should be able to run this docker container within the cluster.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">RCE Update</h2>
+                <p class="blog-post-meta">February 13, 2020 by Theo Fleck</p>
+                <p>Now I am waiting on the C7000 while the R805 is being used for EC2.
+                  I'm researching the software updates that have been released over break.
+                  The whole cluster will need major updates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
@@ -54,7 +175,8 @@
                   nodes, we were using DHCP to allocate IP addresses, but this created
                   inconsistency across reboots despite a lot of tweaking. The solution
                   is to grab the MAC address from ESXi right when the VM is created
-                  and enter it into pfSense before Rancher takes over and installs the OS and begins configuring. It takes a minute before Rancher takes over, so you don't have to be crazy fast.<br>
+                  and enter it into pfSense before Rancher takes over and installs the OS and begins configuring.
+                  It takes a minute before Rancher takes over, so you don't have to be crazy fast.<br>
                   I also got a deployment of vscode to work using the 
                   linuxserver/code-server docker image. It can be deployed
                   with any user password and sudo password. It automatically creates
