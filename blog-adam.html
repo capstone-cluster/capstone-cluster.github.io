@@ -45,6 +45,38 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
+                <h2 class="blog-post-title">Week of April 27th</h2>
+                <p class="blog-post-meta">April 30, 2020 by Adam Dadey</p>
+                <p>
+                  This week I was able to implement a four node slurm cluster on a C7000.
+                  There is one master node and three workers each with 32 cores and 8 GB
+                  of memory. Working with Dr. Cotton, I was able to get one of the network
+                  switches in the C7000 disconnected from the UD Network.  I used this switch
+                  as the LAN for pfSense.  In this implementatation, the slurm master and pfSense
+                  are running in VMs on ESXi on one of the blades.  The three workers are each
+                  running on their own blade. All nodes of the cluster are able to connect to the
+                  pfSense LAN network and communicate with eachother.
+                </p>
+                <p>
+                  I ran the prime.mpi script I was previosuly using th benchmark the scaling
+                  performance of the slurm cluster.  I've attached an image below showing the
+                  performance for one, two, and three nodes, equivalent to 32, 64, and 96 cores!
+                  It's interesting to note that the jump from 64 to 96 cores did't result in a
+                  significant performance increase.
+                </p>
+                <a href="/img/blog-adam/C7000_scaling_results.png" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-adam/C7000_scaling_results.png" style="max-width: 100%; align-self: center; border: 2px solid #000;">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
                 <h2 class="blog-post-title">Week of April 20th</h2>
                 <p class="blog-post-meta">April 23, 2020 by Adam Dadey</p>
                 <p>
