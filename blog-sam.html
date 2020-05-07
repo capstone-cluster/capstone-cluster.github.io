@@ -45,6 +45,117 @@
           <div class="row justify-content-center">
             <div class="col-10 col-md-8">
               <div class="blog-post">
+                <h2 class="blog-post-title">Week of May 4th</h2>
+                <p class="blog-post-meta">May 7, 2020 by Samuel Matylewicz</p>
+                <p>
+		We had our last meeting with Dr. Cotton on Tuesday and he seems very excited with our progress. The cluster sucessfully deployed on the C7000 with a slurm
+		master and VMs with ESXi on each blade. There is much more about this on Adam's blog, but it would be fun in the future to take his project and
+		switch from ESXi to Proxmox and then run his same tests to try and achieve better results. To get Proxmox working properly we had to use the REST API
+		to handle the VMs and keep them a layer away from Proxmox. This adds a layer of complexity to the system and constraining the system like this may take
+		away from some of the Proxmox features that make it excel when compared to ESXi. A main takeaway from this semester and our project as a whole is that
+		there are so many ways to configure and launch a cluster. Each way has pros and cons and are very system specific. Now that everything is working on the
+		C7000, the roots are there, I hope that Dr. Cotton and future students play with the configuration and deployment options to test and record results
+		and find a maximum efficeincy setup.
+                </p>
+                <a href="/img/blog-sam/rest_arch.png" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-sam/rest_arch.png" style="max-width: 65%; align-self: center; border: 2px solid #000;">
+		  </div>
+		</a>
+              </div>
+            </div>
+          </div>
+        </div>
+	<div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">Week of April 20th</h2>
+                <p class="blog-post-meta">April 25, 2020 by Samuel Matylewicz</p>
+                <p>
+		From what we have researched Proxmox is more efficient than ESXi, our team was interested in showing some results to back this up. Testing is no longer
+		in the project scope because we do not have access to the 3 Dell towers (coronavirus) and the delay in receiving the C7000.
+		People believe that Proxmox is taking over the market because it is open source, free to use, and more flexible. One of the biggest benefits is that Proxmox
+		treats every node as a master node. This is why we tried to implement it in our project. Dan and I learned that although Proxmox has great reviews, there is 
+		significantly more literature (especially related to older hardware) for ESXi. Although implementation prooved rather difficult, we eventually got the 
+		script running to have Proxmox grab a master node and tell it to deploy a worker VM. While Adam and Theo continued with ESXi to complete the deliverables,
+		Dan and I continued working on Proxmox to proove the theory and leave the project open for improvement. In the future, a team could implement Proxmox on the
+		C7000 and R805 and run deployment testing to see if the clustering efficeincy has improved.
+                </p>
+                <a href="/img/blog-sam/proxmox_master_node.png" data-lightbox="image">
+                  <div class="justify-content-center d-flex">
+                    <img class="img-fluid" src="/img/blog-sam/proxmox_master_node.png" style="max-width: 65%; align-self: center; border: 2px solid #000;">
+		  </div>
+		</a>
+              </div>
+            </div>
+          </div>
+        </div>
+	<div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">Week of April 13th</h2>
+                <p class="blog-post-meta">April 17, 2020 by Samuel Matylewicz</p>
+                <p>
+		Dr. Cotton set up the R805 on his home network and we are able to connect to it without the complications of the UD network. He told us that the C7000 is at his
+		house and he will be setting it up for us next week. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">Week of April 6th</h2>
+                <p class="blog-post-meta">April 11, 2020 by Samuel Matylewicz</p>
+                <p>
+		We got the terrible news that we will not be allowed back on campus for the remainder of the semester. We talked with Dr. Cotton about moving the R805 and C7000
+		off campus. He will get them when he goes to his office and set them up on his home network. We believe that this will simplify our double VPN issue that we
+		were having with pfSense and the UD network. Theo said he will be working on that this week.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">Week of March 9th</h2>
+                <p class="blog-post-meta">March 17, 2020 by Samuel Matylewicz</p>
+                <p>
+		I did not do much this week due to an exam. More importantly, we found out that spring break was moved up to March 12th through March 29th because of coronavirus.
+		We are not allowed on campus and expect to return online for the rest of the semester. This complication makes it difficult to continue learning as a team, I
+		was really benefitting from sitting down with the team and working through problems together. We will now be meeting through video chat and working remotely. This
+		should not significantly affect our deliverables, the servers are still running in Evans, so we can still work in VMs and VPN into the UD network to deploy on
+		the servers. I am not sure what this means for the testing I was planning on doing to compare Proxmox and ESXi on one of the Dell towers if we are not allowed
+		back on campus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">Week of March 2nd</h2>
+                <p class="blog-post-meta">March 9, 2020 by Samuel Matylewicz</p>
+                <p>
+		Dan is trying to access files from the VM using Proxmox. We have some internet resources to help us through this but it is not working out as planned. I am
+		going to continue working on this so that we can eventually let the master node create and set up the worker VM.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
                 <h2 class="blog-post-title">Week of February 24th</h2>
                 <p class="blog-post-meta">February 28, 2020 by Samuel Matylewicz</p>
                 <p>
