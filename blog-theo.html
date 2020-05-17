@@ -48,6 +48,24 @@
             <div class="col-10 col-md-8">
               <div class="blog-post">
                 <h2 class="blog-post-title">RCE Update</h2>
+                <p class="blog-post-meta">May 8, 2020 by Theo Fleck</p>
+                <p>I made some updates to the web app to improve the stability, and
+                  the user experience with the variability of timing and errors on
+                  the Rancher side. I also added password verification, storing passwords
+                  as Docker "secrets", and abstracting the cluster:project ID into a variable.
+                  I implemented the Github Actions pipeline to automatically build a 
+                  Docker image of the web app. Now, the web app is deployed under 
+                  the "default" project in Rancher.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="blog-post">
+                <h2 class="blog-post-title">RCE Update</h2>
                 <p class="blog-post-meta">May 1, 2020 by Theo Fleck</p>
                 <p>This week I built the web app that will be used to deploy workloads.
                   I had to scrape the API requests and JSON payloads from Rancher's WebUI
