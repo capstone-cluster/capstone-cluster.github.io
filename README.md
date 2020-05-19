@@ -1,2 +1,2 @@
-# cpeg498-cluster.github.io
+# capstone-cluster.github.io
 Web site for senior design project
