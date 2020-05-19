@@ -1,2 +1,2 @@
 # capstone-cluster.github.io
-Web site for senior design project
+Web site for capstone senior design project
